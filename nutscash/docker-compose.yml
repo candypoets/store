@@ -1,6 +1,10 @@
 version: "3.7"
 
 services:
+  app_proxy:
+    environment:
+      APP_HOST: nut_web_1
+      APP_PORT: 80
   app:
     image: ticruz38/nuts:dev
     restart: unless-stopped
