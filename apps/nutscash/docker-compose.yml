@@ -1,0 +1,15 @@
+version: "3.7"
+
+services:
+  app:
+    image: ticruz38/nuts:dev
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    # Umbrel reverse-proxies to this container on port 3000
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://127.0.0.1:3000/ || exit 1"]
+      interval: 5s
+      timeout: 2s
+      retries: 15
