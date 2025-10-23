@@ -10,6 +10,5 @@ developer: The candy poets
 website: https://github.com/candypoets/nutscash
 repo: https://github.com/candypoets/nutscash
 support: https://github.com/candypoets/nutscash/issues
-icon: ./icon.svg
 port: 3000
 path: ""
