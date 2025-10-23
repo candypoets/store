@@ -4,6 +4,7 @@ name: NutsCash
 version: 0.1.0
 category: finance
 tagline: Manage eCash tokens on Nostr
+icon: https://i.imgur.com/Hi7EYoI.png
 description: >
   NutsCash is a SvelteKit app for managing eCash tokens (Cashu) integrated with Nostr.
 developer: The candy poets
