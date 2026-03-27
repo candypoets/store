@@ -1,15 +1,30 @@
 manifestVersion: 1
 id: nutscash
+category: bitcoin
 name: NutsCash
-version: 0.1.0
-category: finance
-tagline: Manage eCash tokens on Nostr
-icon: https://i.imgur.com/Hi7EYoI.png
-description: >
-  NutsCash is a SvelteKit app for managing eCash tokens (Cashu) integrated with Nostr.
-developer: The candy poets
-website: https://github.com/candypoets/nutscash
-repo: https://github.com/candypoets/nutscash
-support: https://github.com/candypoets/nutscash/issues
-port: 3000
-path: ""
+tagline: Cashu wallet and Nostr client in one app
+version: '0.2.7'
+description: >-
+  NutsCash is an open-source web wallet for Cashu ecash with integrated Nostr social features.
+
+  It supports multiple mints, minting and melting via Lightning, NIP-60 backup, and private ecash zaps.
+
+  This package is intended for self-hosting on umbrelOS.
+developer: ticruz38
+website: https://nuts.cash
+dependencies:
+  - nostr-relay
+repo: https://github.com/candypoets/nuts
+support: https://github.com/candypoets/nuts/issues
+port: 3195
+gallery:
+  - 1.png
+  - 2.png
+  - 3.png
+  - 4.png
+path: ''
+defaultUsername: ''
+defaultPassword: ''
+releaseNotes: ''
+submitter: ticruz38
+submission: ''
