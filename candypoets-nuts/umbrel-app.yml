@@ -1,8 +1,8 @@
 manifestVersion: 1
-id: candypoets-nutscash
+id: candypoets-nuts
 category: bitcoin
-name: NutsCash
-icon: icon.svg
+name: Nuts
+icon: https://image.nostr.build/8d9e1e5a6fbc1dacc5cdfd5b1ce28b25d33c6539ac357e40ed6880c9e4fa34d4.png
 tagline: Cashu wallet and Nostr client in one app
 version: "0.2.7"
 description: >-
@@ -15,10 +15,10 @@ repo: https://github.com/candypoets/nuts
 support: https://github.com/candypoets/nuts/issues
 port: 3195
 gallery:
-    - 1.png
-    - 2.png
-    - 3.png
-    - 4.png
+    - https://blossom.nuts.cash/d105d21542e3c57809729036dbbb075ff09df396af64a065f60fe0e9ccba1e6a.png
+    - https://blossom.nuts.cash/2b519b975f2bbce0290a511313d61221765322942a7fb57a8daa87a16089dd32.png
+    - https://blossom.nuts.cash/4191d7b8cb0b2bddcf8c167344b61465e903aa092f5e916b1b6c272b86fbb257.png
+    - https://blossom.nuts.cash/00b2f47a82edf67e07dadb3913d82b3764a728b492b00c30df468deb6885b3b2.png
 path: ""
 defaultUsername: ""
 defaultPassword: ""
