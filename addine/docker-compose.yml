@@ -1,7 +1,7 @@
 services:
   app_proxy:
     environment:
-      APP_HOST: affine_web_1
+      APP_HOST: addine_web_1
       APP_PORT: 3010
 
   web:
@@ -9,8 +9,8 @@ services:
     restart: on-failure
     environment:
       - AFFINE_CONFIG_PATH=/root/.affine/config
-      - REDIS_SERVER_HOST=affine_redis_1
-      - DATABASE_URL=postgres://affine:affine@affine_db_1:5432/affine
+      - REDIS_SERVER_HOST=addine_redis_1
+      - DATABASE_URL=postgres://affine:affine@addine_db_1:5432/affine
       - NODE_ENV=production
     volumes:
       - ${APP_DATA_DIR}/data/config:/root/.affine/config
@@ -29,8 +29,8 @@ services:
     command: ["sh", "-c", "node ./scripts/self-host-predeploy"]
     environment:
       - AFFINE_CONFIG_PATH=/root/.affine/config
-      - REDIS_SERVER_HOST=affine_redis_1
-      - DATABASE_URL=postgres://affine:affine@affine_db_1:5432/affine
+      - REDIS_SERVER_HOST=addine_redis_1
+      - DATABASE_URL=postgres://affine:affine@addine_db_1:5432/affine
       - NODE_ENV=production
     volumes:
       - ${APP_DATA_DIR}/data/config:/root/.affine/config

@@ -1,6 +1,7 @@
 manifestVersion: 1
-id: affine
+id: addine
 name: Affine
+icon: https://affine.pro/favicon.ico
 tagline: Open source alternative to Notion, Miro, and Airtable
 category: files
 version: "0.25.1"
