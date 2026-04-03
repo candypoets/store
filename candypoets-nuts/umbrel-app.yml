@@ -4,10 +4,10 @@ category: bitcoin
 name: Nuts
 icon: https://image.nostr.build/8d9e1e5a6fbc1dacc5cdfd5b1ce28b25d33c6539ac357e40ed6880c9e4fa34d4.png
 tagline: Cashu wallet and Nostr client in one app
-version: "0.2.7"
+version: "0.2.9"
 description: >-
     Your own Nostr social client with built-in Bitcoin wallet. Browse feeds, interact with posts, and zap sats without relying on third-party services.
-developer: ticruz38
+developer: sotachi
 website: https://nuts.cash
 dependencies:
     - nostr-relay

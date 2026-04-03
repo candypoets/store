@@ -1,22 +1,22 @@
 version: "3.7"
 
 services:
-  app_proxy:
-    environment:
-      APP_HOST: candypoets-nutscash_web_1
-      APP_PORT: 3000
+    app_proxy:
+        environment:
+            APP_HOST: candypoets-nutscash_web_1
+            APP_PORT: 3000
 
-  web:
-    image: docker.nuts.cash/nuts:0.2.7
-    restart: on-failure
-    stop_grace_period: 1m
-    environment:
-      HOST: 0.0.0.0
-      PORT: 3000
-      ORIGIN: http://${DEVICE_DOMAIN_NAME}:3195
-      # Optional LNURL domain used by lnuts utils
-      PUBLIC_LNUTS_DOMAIN: ${DEVICE_DOMAIN_NAME}
-      # Note: Relay configuration is baked in at build time via VITE_* build args.
-      # The local nostr-relay (ws://${DEVICE_HOSTNAME}:4848) is NOT included in
-      # default relays as those are for public publishing. Users can manually
-      # add their local relay in the app settings if desired.
+    web:
+        image: docker.nuts.cash/nuts:0.2.9
+        restart: on-failure
+        stop_grace_period: 1m
+        environment:
+            HOST: 0.0.0.0
+            PORT: 3000
+            ORIGIN: http://${DEVICE_DOMAIN_NAME}:3195
+            # Optional LNURL domain used by lnuts utils
+            PUBLIC_LNUTS_DOMAIN: ${DEVICE_DOMAIN_NAME}
+            # Note: Relay configuration is baked in at build time via VITE_* build args.
+            # The local nostr-relay (ws://${DEVICE_HOSTNAME}:4848) is NOT included in
+            # default relays as those are for public publishing. Users can manually
+            # add their local relay in the app settings if desired.
